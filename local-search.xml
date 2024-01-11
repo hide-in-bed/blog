@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title>transform2Json</title>
+    <link href="/2024/01/12/transform2Json/"/>
+    <url>/2024/01/12/transform2Json/</url>
+    
+    <content type="html"><![CDATA[<p>#报文转Json格式<br><!DOCTYPE html></p><html lang="en"><head>    <title>        json格式化    </title>    <meta charset="UTF-8"></head><script type="text/javascript">    function initStyle() {        document.body.style.width = window.innerWidth;        document.getElementById("output_value").style.height = window.innerHeight + "px";    }</script><body onload="initStyle()">    <textarea id="content_value" style="width: 100%;height:150px;"></textarea>    <div style="width: 100%;text-align: center;">        <input type="button" value="格式化" onclick="check()">    </div>    <textarea id="output_value" style="width: 100%;"></textarea></body><script type="text/javascript">    function check() {        var text_value = document.getElementById("content_value").value;        if (text_value == "") {            alert("不能为空");            return false;        } else {            var res = "";            for (var i = 0, j = 0, k = 0, ii, ele; i < text_value.length; i++) {                //k:缩进 j:个数                ele = text_value.charAt(i);                if (j % 2 == 0 && (ele == "}" || ele == "]")) {                    k--;                    for (ii = 0; ii < k; ii++) {                        ele = "\t" + ele;                    }                    ele = "\n" + ele;                } else if (j % 2 == 0 && (ele == "{" || ele == "[")) {                    ele += "\n";                    k++;                    for (ii = 0; ii < k; ii++) {                        ele += "\t";                    }                } else if (j % 2 == 0 && ele == ",") {                    ele += "\n";                     for (ii = 0; ii < k; ii++) {                        ele += "\t";                    }                } else if (ele == "\"") {                    j++;                }                res += ele;            }            document.getElementById("output_value").value = res;        }    }</script></html>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo</title>
+    <link href="/2024/01/12/hexo/"/>
+    <url>/2024/01/12/hexo/</url>
+    
+    <content type="html"><![CDATA[<p>#Hexo使用总结<br>##1.如何更换主题<br>#####（1）hexo根目录下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git <span class="hljs-built_in">clone</span> https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid<br>$ <span class="hljs-built_in">cd</span> fluid<br>$ npm install<br></code></pre></td></tr></table></figure><p>#####（2）修改Hexo根目录下_config.yml</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">theme: fluid<br></code></pre></td></tr></table></figure><p>#####（3）清除缓存</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo clean<br></code></pre></td></tr></table></figure><p>#####（4）构建页面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo g<br></code></pre></td></tr></table></figure><p>#####（5）本地调试</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo s<br></code></pre></td></tr></table></figure><p>#####（6）上传版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo d<br></code></pre></td></tr></table></figure><p>#####如果报错：无权限或者文件不存在，检查是否有权限上传(key)或_config.yml文件配置是否正确</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repo: git@github.com:hide-in-bed/blog.git<br>  branch: master<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/01/10/hello-world/"/>
     <url>/2024/01/10/hello-world/</url>
