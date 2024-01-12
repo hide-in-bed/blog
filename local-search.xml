@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/2024/01/12/Leetcode2645/"/>
+    <url>/2024/01/12/Leetcode2645/</url>
+    
+    <content type="html"><![CDATA[<p>#Leetcode 2645 - 构造有效字符串的最小插入数</p><p>###题目链接：<br><a href="https://leetcode.cn/problems/minimum-additions-to-make-valid-string/description/">https://leetcode.cn/problems/minimum-additions-to-make-valid-string/description/</a><br>###题目大意：<br>给你一个字符串 word ，你可以向其中任何位置插入 “a”、”b” 或 “c” 任意次，返回使 word 有效 需要插入的最少字母数。<br>如果字符串可以由 “abc” 串联多次得到，则认为该字符串 有效 。</p><p>###分析：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">动态规划：<br>1.word[i] 单独存在于一组 abc 中，dp[i] = dp[i - 1] + 2<br>2.如果word[i] &gt; word[i - 1]，则word[i]和word[i - 1]在同一组中，那么 dp[i] = dp[i - 1] - 1<br>例子：<br>abcbabbc<br>021024354<br></code></pre></td></tr></table></figure><p>###代码：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">addMinimum</span><span class="hljs-params">(string word)</span> </span>&#123;s<br>        <span class="hljs-type">int</span> n = word.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">dp</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) &#123;<br>            dp[i] = dp[i - <span class="hljs-number">1</span>] + <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (word[i] &gt; word[i - <span class="hljs-number">1</span>]) &#123;<br>                dp[i] = dp[i - <span class="hljs-number">1</span>] - <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> dp[n];<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>transform2Json</title>
     <link href="/2024/01/12/transform2Json/"/>
     <url>/2024/01/12/transform2Json/</url>

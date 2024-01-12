@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="#报文转Json格式                 json格式化                 function initStyle() {         document.body.style.width &#x3D; window.innerWidth;         document.getElementById(&quot;output_value&quot;).style.height &#x3D; window.i">
+    <meta name="description" content="#Leetcode 2645 - 构造有效字符串的最小插入数 ###题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;minimum-additions-to-make-valid-string&#x2F;description&#x2F;###题目大意：给你一个字符串 word ，你可以向其中任何位置插入 “a”、”b” 或 “c” 任意次，返回使 word 有效 需要插入的最少字母数。如果字符串">
 <meta property="og:type" content="article">
-<meta property="og:title" content="transform2Json">
-<meta property="og:url" content="http://example.com/2024/01/12/transform2Json/index.html">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://example.com/2024/01/12/Leetcode2645/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="#报文转Json格式                 json格式化                 function initStyle() {         document.body.style.width &#x3D; window.innerWidth;         document.getElementById(&quot;output_value&quot;).style.height &#x3D; window.i">
+<meta property="og:description" content="#Leetcode 2645 - 构造有效字符串的最小插入数 ###题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;minimum-additions-to-make-valid-string&#x2F;description&#x2F;###题目大意：给你一个字符串 word ，你可以向其中任何位置插入 “a”、”b” 或 “c” 任意次，返回使 word 有效 需要插入的最少字母数。如果字符串">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-11T17:29:49.000Z">
-<meta property="article:modified_time" content="2024-01-11T17:35:12.489Z">
+<meta property="article:published_time" content="2024-01-12T06:50:57.000Z">
+<meta property="article:modified_time" content="2024-01-12T11:00:02.978Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>transform2Json - JJW&#39;s blog</title>
+  <title>test - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="transform2Json"></span>
+            <span id="subtitle" data-typed-text="test"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-12 01:29" pubdate>
-          January 12, 2024 am
+        <time datetime="2024-01-12 14:50" pubdate>
+          January 12, 2024 pm
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          123 words
+          208 words
         
       </span>
     
@@ -267,74 +267,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">transform2Json</h1>
+            <h1 id="seo-header">test</h1>
             
             
               <div class="markdown-body">
                 
-                <p>#报文转Json格式<br><!DOCTYPE html></p>
-<html lang="en">
+                <p>#Leetcode 2645 - 构造有效字符串的最小插入数</p>
+<p>###题目链接：<br><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/minimum-additions-to-make-valid-string/description/">https://leetcode.cn/problems/minimum-additions-to-make-valid-string/description/</a><br>###题目大意：<br>给你一个字符串 word ，你可以向其中任何位置插入 “a”、”b” 或 “c” 任意次，返回使 word 有效 需要插入的最少字母数。<br>如果字符串可以由 “abc” 串联多次得到，则认为该字符串 有效 。</p>
+<p>###分析：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">动态规划：<br>1.word[i] 单独存在于一组 abc 中，dp[i] = dp[i - 1] + 2<br>2.如果word[i] &gt; word[i - 1]，则word[i]和word[i - 1]在同一组中，那么 dp[i] = dp[i - 1] - 1<br>例子：<br>abcbabbc<br>021024354<br></code></pre></td></tr></table></figure>
+<p>###代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">addMinimum</span><span class="hljs-params">(string word)</span> </span>&#123;s<br>        <span class="hljs-type">int</span> n = word.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">dp</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) &#123;<br>            dp[i] = dp[i - <span class="hljs-number">1</span>] + <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (word[i] &gt; word[i - <span class="hljs-number">1</span>]) &#123;<br>                dp[i] = dp[i - <span class="hljs-number">1</span>] - <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> dp[n];<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
-<head>
-    <title>
-        json格式化
-    </title>
-    <meta charset="UTF-8">
-</head>
-<script type="text/javascript">
-    function initStyle() {
-        document.body.style.width = window.innerWidth;
-        document.getElementById("output_value").style.height = window.innerHeight + "px";
-    }
-</script>
-
-<body onload="initStyle()">
-    <textarea id="content_value" style="width: 100%;height:150px;"></textarea>
-    <div style="width: 100%;text-align: center;">
-        <input type="button" value="格式化" onclick="check()">
-    </div>
-    <textarea id="output_value" style="width: 100%;"></textarea>
-</body>
-
-<script type="text/javascript">
-    function check() {
-        var text_value = document.getElementById("content_value").value;
-        if (text_value == "") {
-            alert("不能为空");
-            return false;
-        } else {
-            var res = "";
-            for (var i = 0, j = 0, k = 0, ii, ele; i < text_value.length; i++) {
-                //k:缩进 j:个数
-                ele = text_value.charAt(i);
-                if (j % 2 == 0 && (ele == "}" || ele == "]")) {
-                    k--;
-                    for (ii = 0; ii < k; ii++) {
-                        ele = "\t" + ele;
-                    }
-                    ele = "\n" + ele;
-                } else if (j % 2 == 0 && (ele == "{" || ele == "[")) {
-                    ele += "\n";
-                    k++;
-                    for (ii = 0; ii < k; ii++) {
-                        ele += "\t";
-                    }
-                } else if (j % 2 == 0 && ele == ",") {
-                    ele += "\n";
-                     for (ii = 0; ii < k; ii++) {
-                        ele += "\t";
-                    }
-                } else if (ele == "\"") {
-                    j++;
-                }
-                res += ele;
-            }
-            document.getElementById("output_value").value = res;
-        }
-    }
-</script>
-
-</html>
                 
               </div>
             
@@ -351,8 +295,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>transform2Json</div>
-      <div>http://example.com/2024/01/12/transform2Json/</div>
+      <div>test</div>
+      <div>http://example.com/2024/01/12/Leetcode2645/</div>
     </div>
     <div class="license-meta">
       
@@ -396,18 +340,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/12/Leetcode2645/" title="test">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">test</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/12/hexo/" title="hexo">
-                        <span class="hidden-mobile">hexo</span>
+                      <a href="/2024/01/12/transform2Json/" title="transform2Json">
+                        <span class="hidden-mobile">transform2Json</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
