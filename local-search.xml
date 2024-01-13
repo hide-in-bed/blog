@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>how to use kindle</title>
+    <link href="/2024/01/13/how-to-use-kindle/"/>
+    <url>/2024/01/13/how-to-use-kindle/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo使用总结"><a href="#Hexo使用总结" class="headerlink" title="Hexo使用总结"></a>Hexo使用总结</h1><h2 id="1-如何传文件到Kindle"><a href="#1-如何传文件到Kindle" class="headerlink" title="1.如何传文件到Kindle"></a>1.如何传文件到Kindle</h2><h5 id="（1）设备本地"><a href="#（1）设备本地" class="headerlink" title="（1）设备本地"></a>（1）设备本地</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">数据线直连Kindle传<br></code></pre></td></tr></table></figure><h5 id="（2）云图书馆（推荐，各设备可同步进度）"><a href="#（2）云图书馆（推荐，各设备可同步进度）" class="headerlink" title="（2）云图书馆（推荐，各设备可同步进度）"></a>（2）云图书馆（推荐，各设备可同步进度）</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">通过微信传输文件，将文本（txt等格式文件）传至手机微信<br>微信点击文件，用其他应用打开，选择Kindle手机app打开<br>修改文件后缀，加上【.mobi】传至Kindle云图书馆，设备同步数据即可看到电子书<br></code></pre></td></tr></table></figure><h2 id="2-如何使用Kindle"><a href="#2-如何使用Kindle" class="headerlink" title="2.如何使用Kindle"></a>2.如何使用Kindle</h2><h5 id="（1）退出阅读模式"><a href="#（1）退出阅读模式" class="headerlink" title="（1）退出阅读模式"></a>（1）退出阅读模式</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">点击电子书上方即可弹出bar<br></code></pre></td></tr></table></figure><h5 id="（2）云图书馆（推荐，各设备可同步进度）-1"><a href="#（2）云图书馆（推荐，各设备可同步进度）-1" class="headerlink" title="（2）云图书馆（推荐，各设备可同步进度）"></a>（2）云图书馆（推荐，各设备可同步进度）</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">通过微信传输文件，将文本（txt等格式文件）传至手机微信<br>微信点击文件，用其他应用打开，选择Kindle手机app打开<br>修改文件后缀，加上【.mobi】传至Kindle云图书馆，设备同步数据即可看到电子书<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Leetcode2645</title>
     <link href="/2024/01/12/Leetcode2645/"/>
     <url>/2024/01/12/Leetcode2645/</url>
