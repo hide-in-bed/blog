@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>ideal</title>
+    <link href="/2024/01/17/ideal/"/>
+    <url>/2024/01/17/ideal/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Ideal"><a href="#Ideal" class="headerlink" title="Ideal"></a>Ideal</h1><h3 id="1-启动失败"><a href="#1-启动失败" class="headerlink" title="1.启动失败"></a>1.启动失败</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">报错内容：No active profile <span class="hljs-built_in">set</span>, falling back to default profiles: default<br>原因：23年版ideal默认隐藏VM options，有的项目通过Program arguments配置环境变量，有的通过VM options，填错就会找不到配置环境<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Linux</title>
     <link href="/2024/01/15/Linux/"/>
     <url>/2024/01/15/Linux/</url>
