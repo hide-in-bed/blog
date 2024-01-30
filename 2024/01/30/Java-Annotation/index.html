@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Ideal1.启动失败12报错内容：No active profile set, falling back to default profiles: default原因：23年版ideal默认隐藏VM options，有的项目通过Program arguments配置环境变量，有的通过VM options，填错就会找不到配置环境">
+    <meta name="description" content="Java注释1.@Override和@Authwired和@Resource（1）@Override注解是伪代码，表示子类重写父类的方法（2）@Authwired和@Resource区别 123456区别：@Autowired跟Spring框架强耦合了，如果换成其他框架，@Autowired就没作用了。而@Resource是JSR-250提供的，它是Java标准，绝大部分框架都支持包含的属性：@A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ideal">
-<meta property="og:url" content="http://example.com/2024/01/17/ideal/index.html">
+<meta property="og:title" content="Java-Annotation">
+<meta property="og:url" content="http://example.com/2024/01/30/Java-Annotation/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="Ideal1.启动失败12报错内容：No active profile set, falling back to default profiles: default原因：23年版ideal默认隐藏VM options，有的项目通过Program arguments配置环境变量，有的通过VM options，填错就会找不到配置环境">
+<meta property="og:description" content="Java注释1.@Override和@Authwired和@Resource（1）@Override注解是伪代码，表示子类重写父类的方法（2）@Authwired和@Resource区别 123456区别：@Autowired跟Spring框架强耦合了，如果换成其他框架，@Autowired就没作用了。而@Resource是JSR-250提供的，它是Java标准，绝大部分框架都支持包含的属性：@A">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-17T06:37:02.000Z">
-<meta property="article:modified_time" content="2024-01-17T14:34:43.992Z">
+<meta property="article:published_time" content="2024-01-30T13:13:58.000Z">
+<meta property="article:modified_time" content="2024-01-30T13:23:02.246Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>ideal - JJW&#39;s blog</title>
+  <title>Java-Annotation - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ideal"></span>
+            <span id="subtitle" data-typed-text="Java-Annotation"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-17 14:37" pubdate>
-          January 17, 2024 pm
+        <time datetime="2024-01-30 21:13" pubdate>
+          January 30, 2024 pm
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          51 words
+          274 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 mins
+          3 mins
         
       </span>
     
@@ -267,12 +267,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">ideal</h1>
+            <h1 id="seo-header">Java-Annotation</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Ideal"><a href="#Ideal" class="headerlink" title="Ideal"></a>Ideal</h1><h3 id="1-启动失败"><a href="#1-启动失败" class="headerlink" title="1.启动失败"></a>1.启动失败</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">报错内容：No active profile <span class="hljs-built_in">set</span>, falling back to default profiles: default<br>原因：23年版ideal默认隐藏VM options，有的项目通过Program arguments配置环境变量，有的通过VM options，填错就会找不到配置环境<br></code></pre></td></tr></table></figure>
+                <h1 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h1><h2 id="1-Override和-Authwired和-Resource"><a href="#1-Override和-Authwired和-Resource" class="headerlink" title="1.@Override和@Authwired和@Resource"></a>1.@Override和@Authwired和@Resource</h2><p>（1）@Override注解是伪代码，表示子类重写父类的方法<br>（2）@Authwired和@Resource区别</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">区别：@Autowired跟Spring框架强耦合了，如果换成其他框架，@Autowired就没作用了。而@Resource是JSR-250提供的，它是Java标准，绝大部分框架都支持<br>包含的属性：@Autowired只包含一个参数：required，表示是否开启自动注入，默认是<span class="hljs-literal">true</span>。而@Resource包含七个参数，其中最重要的两个参数是：name 和 <span class="hljs-built_in">type</span><br>装配规则：Autowired默认按byType自动装配，而@Resource默认byName自动装配<br>注解应用的地方不同：@Autowired能够用在：构造器、方法、参数、成员变量和注解上<br>@Resource能用在：类、成员变量和方法上<br>什么时候用：Autowired按类型查找，书写方便，不用在后面跟名字，缺点：当一个Service有多个ServiceImpl去实现时，那么会报错，因为它不知道去实现哪一个。Resource按名字查找，后面要跟参数name，好处：当有多个Impl实现类时，可以通name快速找到<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -289,8 +290,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ideal</div>
-      <div>http://example.com/2024/01/17/ideal/</div>
+      <div>Java-Annotation</div>
+      <div>http://example.com/2024/01/30/Java-Annotation/</div>
     </div>
     <div class="license-meta">
       
@@ -302,7 +303,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 17, 2024</div>
+          <div>January 30, 2024</div>
         </div>
       
       
@@ -334,18 +335,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/22/TSP/" title="TSP">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">TSP</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/15/Linux/" title="Linux">
-                        <span class="hidden-mobile">Linux</span>
+                      <a href="/2024/01/26/Leetcode206/" title="Leetcode206">
+                        <span class="hidden-mobile">Leetcode206</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
