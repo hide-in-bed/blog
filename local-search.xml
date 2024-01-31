@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>C++</title>
+    <link href="/2024/01/31/C++/"/>
+    <url>/2024/01/31/C++/</url>
+    
+    <content type="html"><![CDATA[<h1 id="C-学习记录"><a href="#C-学习记录" class="headerlink" title="C++学习记录"></a>C++学习记录</h1><h2 id="1-值传递和引用传递"><a href="#1-值传递和引用传递" class="headerlink" title="1.值传递和引用传递"></a>1.值传递和引用传递</h2><p>值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递<br>引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值<br><a href="https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/description/">Leetcode1466</a>值传递超时，因为值传递会拷贝一次实参，有时间开销</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java-Annotation</title>
     <link href="/2024/01/30/Java-Annotation/"/>
     <url>/2024/01/30/Java-Annotation/</url>
