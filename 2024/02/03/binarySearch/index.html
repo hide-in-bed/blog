@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="C++学习记录1.值传递和引用传递值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值Leetcode1466值传递超时，因为值传递会拷贝一次实参，有时间开销 2.匿名函数1sort(a, a + 4, [&#x3D;](int x, int y) -&gt; bool &#123; return x % 10">
+    <meta name="description" content="1.二分查找的一些特殊情况（1）求&gt;&#x3D;时会存在取不到数组右侧的情况，这个时候初始化r &#x3D; n(n代表数组长度)可以解决同理&lt;&#x3D;时会存在取不到数组左侧的情况，这个时候初始化l &#x3D; -1(n代表数组长度)可以解决参考：Leetcode2300.咒语和药水的成功对数 2.二分查找的有趣题目（1）Leetcode162.寻找峰值峰值元素是指其值严格大于左">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++">
-<meta property="og:url" content="http://example.com/2024/01/31/C++/index.html">
+<meta property="og:title" content="binarySearch">
+<meta property="og:url" content="http://example.com/2024/02/03/binarySearch/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="C++学习记录1.值传递和引用传递值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值Leetcode1466值传递超时，因为值传递会拷贝一次实参，有时间开销 2.匿名函数1sort(a, a + 4, [&#x3D;](int x, int y) -&gt; bool &#123; return x % 10">
+<meta property="og:description" content="1.二分查找的一些特殊情况（1）求&gt;&#x3D;时会存在取不到数组右侧的情况，这个时候初始化r &#x3D; n(n代表数组长度)可以解决同理&lt;&#x3D;时会存在取不到数组左侧的情况，这个时候初始化l &#x3D; -1(n代表数组长度)可以解决参考：Leetcode2300.咒语和药水的成功对数 2.二分查找的有趣题目（1）Leetcode162.寻找峰值峰值元素是指其值严格大于左">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-31T14:19:15.000Z">
-<meta property="article:modified_time" content="2024-02-02T16:29:14.955Z">
+<meta property="article:published_time" content="2024-02-02T16:11:12.000Z">
+<meta property="article:modified_time" content="2024-02-02T16:31:10.236Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>C++ - JJW&#39;s blog</title>
+  <title>binarySearch - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C++"></span>
+            <span id="subtitle" data-typed-text="binarySearch"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-31 22:19" pubdate>
-          January 31, 2024 pm
+        <time datetime="2024-02-03 00:11" pubdate>
+          February 3, 2024 am
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          136 words
+          271 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          2 mins
+          3 mins
         
       </span>
     
@@ -267,15 +267,14 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C++</h1>
+            <h1 id="seo-header">binarySearch</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="C-学习记录"><a href="#C-学习记录" class="headerlink" title="C++学习记录"></a>C++学习记录</h1><h3 id="1-值传递和引用传递"><a href="#1-值传递和引用传递" class="headerlink" title="1.值传递和引用传递"></a>1.值传递和引用传递</h3><p>值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递<br>引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值<br><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/description/">Leetcode1466</a>值传递超时，因为值传递会拷贝一次实参，有时间开销</p>
-<h3 id="2-匿名函数"><a href="#2-匿名函数" class="headerlink" title="2.匿名函数"></a>2.匿名函数</h3><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">sort(a, a + <span class="hljs-number">4</span>, [=](<span class="hljs-built_in">int</span> x, <span class="hljs-built_in">int</span> y) -&gt; <span class="hljs-built_in">bool</span> &#123; <span class="hljs-keyword">return</span> x % <span class="hljs-number">10</span> &lt; y % <span class="hljs-number">10</span>; &#125; );<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-a-b向上取整"><a href="#3-a-b向上取整" class="headerlink" title="3.a&#x2F;b向上取整"></a>3.a&#x2F;b向上取整</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C++">（a + b - <span class="hljs-number">1</span>) / b<br></code></pre></td></tr></table></figure>
+                <h1 id="1-二分查找的一些特殊情况"><a href="#1-二分查找的一些特殊情况" class="headerlink" title="1.二分查找的一些特殊情况"></a>1.二分查找的一些特殊情况</h1><p>（1）求&gt;&#x3D;时会存在取不到数组右侧的情况，这个时候初始化r &#x3D; n(n代表数组长度)可以解决<br>同理&lt;&#x3D;时会存在取不到数组左侧的情况，这个时候初始化l &#x3D; -1(n代表数组长度)可以解决<br>参考：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/description/">Leetcode2300.咒语和药水的成功对数</a></p>
+<h1 id="2-二分查找的有趣题目"><a href="#2-二分查找的有趣题目" class="headerlink" title="2.二分查找的有趣题目"></a>2.二分查找的有趣题目</h1><p>（1）<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/find-peak-element/?envType=study-plan-v2&envId=leetcode-75">Leetcode162.寻找峰值</a><br>峰值元素是指其值严格大于左右相邻值的元素。<br>给你一个整数数组 nums，找到峰值元素并返回其索引。数组可能包含多个峰值，在这种情况下，返回 任何一个峰值 所在位置即可。<br>你可以假设 nums[-1] &#x3D; nums[n] &#x3D; -∞ 。<br>你必须实现时间复杂度为 O(log n) 的算法来解决此问题。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">findPeakElement</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums)</span> </span>&#123;<br>        <span class="hljs-type">int</span> l = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> r = nums.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span> (l &lt; r) &#123;<br>            <span class="hljs-type">int</span> mid = (r - l) / <span class="hljs-number">2</span> + l;<br>            <span class="hljs-keyword">if</span> (nums[mid] &lt; nums[mid + <span class="hljs-number">1</span>]) &#123;<br>                l = mid + <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                r = mid;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> r;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -292,8 +291,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>C++</div>
-      <div>http://example.com/2024/01/31/C++/</div>
+      <div>binarySearch</div>
+      <div>http://example.com/2024/02/03/binarySearch/</div>
     </div>
     <div class="license-meta">
       
@@ -305,7 +304,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 31, 2024</div>
+          <div>February 3, 2024</div>
         </div>
       
       
@@ -337,9 +336,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/31/Leetcode3020/" title="Leetcode3020">
+                      <a href="/2024/02/03/LeetCode%E6%80%BB%E7%BB%93/" title="LeetCode总结">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Leetcode3020</span>
+                        <span class="hidden-mobile">LeetCode总结</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -347,8 +346,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/30/Java-Annotation/" title="Java-Annotation">
-                        <span class="hidden-mobile">Java-Annotation</span>
+                      <a href="/2024/01/31/Leetcode3020/" title="Leetcode3020">
+                        <span class="hidden-mobile">Leetcode3020</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

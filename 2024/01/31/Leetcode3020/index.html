@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="C++学习记录1.值传递和引用传递值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值Leetcode1466值传递超时，因为值传递会拷贝一次实参，有时间开销 2.匿名函数1sort(a, a + 4, [&#x3D;](int x, int y) -&gt; bool &#123; return x % 10">
+    <meta name="description" content="Leetcode 3020 - 子集中元素的最大数量题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;find-the-maximum-number-of-elements-in-subset&#x2F;description&#x2F; 题目大意：给你一个 正整数 数组 nums 。 你需要从数组中选出一个满足下述条件的子集： 你可以将选中的元素放置在一个下标从 0 开始的数组中，并使其遵循以下模">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++">
-<meta property="og:url" content="http://example.com/2024/01/31/C++/index.html">
+<meta property="og:title" content="Leetcode3020">
+<meta property="og:url" content="http://example.com/2024/01/31/Leetcode3020/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="C++学习记录1.值传递和引用传递值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值Leetcode1466值传递超时，因为值传递会拷贝一次实参，有时间开销 2.匿名函数1sort(a, a + 4, [&#x3D;](int x, int y) -&gt; bool &#123; return x % 10">
+<meta property="og:description" content="Leetcode 3020 - 子集中元素的最大数量题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;find-the-maximum-number-of-elements-in-subset&#x2F;description&#x2F; 题目大意：给你一个 正整数 数组 nums 。 你需要从数组中选出一个满足下述条件的子集： 你可以将选中的元素放置在一个下标从 0 开始的数组中，并使其遵循以下模">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-31T14:19:15.000Z">
-<meta property="article:modified_time" content="2024-02-02T16:29:14.955Z">
+<meta property="article:published_time" content="2024-01-31T15:55:04.000Z">
+<meta property="article:modified_time" content="2024-01-31T16:02:20.260Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>C++ - JJW&#39;s blog</title>
+  <title>Leetcode3020 - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C++"></span>
+            <span id="subtitle" data-typed-text="Leetcode3020"></span>
           
         </div>
 
@@ -207,7 +207,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-31 22:19" pubdate>
+        <time datetime="2024-01-31 23:55" pubdate>
           January 31, 2024 pm
         </time>
       </span>
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          136 words
+          539 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          2 mins
+          5 mins
         
       </span>
     
@@ -267,15 +267,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C++</h1>
+            <h1 id="seo-header">Leetcode3020</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="C-学习记录"><a href="#C-学习记录" class="headerlink" title="C++学习记录"></a>C++学习记录</h1><h3 id="1-值传递和引用传递"><a href="#1-值传递和引用传递" class="headerlink" title="1.值传递和引用传递"></a>1.值传递和引用传递</h3><p>值传递：传值，形参有自己的存储空间，对形参的改变不会改变实参值，效率低于引用传递<br>引用传递：传的是地址，不分配新的内存空间，方对形参的改变会改变实参值<br><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/description/">Leetcode1466</a>值传递超时，因为值传递会拷贝一次实参，有时间开销</p>
-<h3 id="2-匿名函数"><a href="#2-匿名函数" class="headerlink" title="2.匿名函数"></a>2.匿名函数</h3><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">sort(a, a + <span class="hljs-number">4</span>, [=](<span class="hljs-built_in">int</span> x, <span class="hljs-built_in">int</span> y) -&gt; <span class="hljs-built_in">bool</span> &#123; <span class="hljs-keyword">return</span> x % <span class="hljs-number">10</span> &lt; y % <span class="hljs-number">10</span>; &#125; );<br></code></pre></td></tr></table></figure>
+                <h1 id="Leetcode-3020-子集中元素的最大数量"><a href="#Leetcode-3020-子集中元素的最大数量" class="headerlink" title="Leetcode 3020 - 子集中元素的最大数量"></a>Leetcode 3020 - 子集中元素的最大数量</h1><h3 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/find-the-maximum-number-of-elements-in-subset/description/">https://leetcode.cn/problems/find-the-maximum-number-of-elements-in-subset/description/</a></p>
+<h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给你一个 正整数 数组 nums 。</p>
+<p>你需要从数组中选出一个满足下述条件的<br>子集<br>：</p>
+<p>你可以将选中的元素放置在一个下标从 0 开始的数组中，并使其遵循以下模式：[x, x2, x4, …, xk&#x2F;2, xk, xk&#x2F;2, …, x4, x2, x]（注意，k 可以是任何 非负 的 2 的幂）。例如，[2, 4, 16, 4, 2] 和 [3, 9, 3] 都符合这一模式，而 [2, 4, 8, 4, 2] 则不符合。<br>返回满足这些条件的子集中，元素数量的 最大值 。</p>
+<p>示例 1：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">输入：nums = [5,4,1,2,2]<br>输出：3<br>解释：选择子集 &#123;4,2,2&#125; ，将其放在数组 [2,4,2] 中，它遵循该模式，且 22 == 4 。因此答案是 3 。<br></code></pre></td></tr></table></figure>
 
-<h3 id="3-a-b向上取整"><a href="#3-a-b向上取整" class="headerlink" title="3.a&#x2F;b向上取整"></a>3.a&#x2F;b向上取整</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C++">（a + b - <span class="hljs-number">1</span>) / b<br></code></pre></td></tr></table></figure>
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">固定数组中间值，确定一个数组，然后用哈希表来判断能否成立。但是超时。<br>本题数据规模p最大为4，因此可以采用暴力。暴力反而不会超时。<br>注意特判 x=1 的情况。<br></code></pre></td></tr></table></figure>
+
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">//此解答超时</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maximumLength</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums)</span> </span>&#123;<br>        <span class="hljs-comment">//固定数组中间值，确定一个数组</span><br>        <span class="hljs-comment">//哈希表用来后续求子集元素数量</span><br>        <span class="hljs-type">int</span> n = nums.<span class="hljs-built_in">size</span>();<br>        unordered_map&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; hashmap;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> num : nums) &#123;<br>            hashmap[num]++;<br>        &#125;<br>        <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> h : hashmap) &#123;<br>            hashmap[h.first]--;<br>            ans = <span class="hljs-built_in">max</span>(ans, <span class="hljs-built_in">subsetCount</span>(h.first, hashmap));<br>            hashmap[h.first]++;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">subsetCount</span><span class="hljs-params">(<span class="hljs-type">int</span> num, unordered_map&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; hp)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (num == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-keyword">return</span> hp[<span class="hljs-number">1</span>] % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> ? hp[<span class="hljs-number">1</span>] - <span class="hljs-number">1</span> : hp[<span class="hljs-number">1</span>];<br>        &#125;<br>        <span class="hljs-type">int</span> res = <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span> (num) &#123;<br>            <span class="hljs-type">double</span> dt = <span class="hljs-built_in">sqrt</span>(num);<br>            <span class="hljs-type">int</span> t = <span class="hljs-built_in">floor</span>(dt);<br>            <span class="hljs-keyword">if</span> (t * t != num || hp[t] &lt; <span class="hljs-number">2</span>) &#123;<br>                <span class="hljs-keyword">break</span>;<br>            &#125;<br>            res += <span class="hljs-number">2</span>;<br>            num = t;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">//暴力求解反而可以通过</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maximumLength</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums)</span> </span>&#123;<br>        unordered_map&lt;<span class="hljs-type">long</span> <span class="hljs-type">long</span>, <span class="hljs-type">int</span>&gt; hp;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> num : nums) &#123;<br>            hp[num]++;<br>        &#125;<br>        <span class="hljs-comment">//特例x==1</span><br>        <span class="hljs-type">int</span> ans = hp[<span class="hljs-number">1</span>] - (hp[<span class="hljs-number">1</span>] % <span class="hljs-number">2</span> ^ <span class="hljs-number">1</span>);<br>        hp.<span class="hljs-built_in">erase</span>(<span class="hljs-number">1</span>);<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;[num, _] : hp) &#123;<br>            <span class="hljs-type">int</span> res = <span class="hljs-number">0</span>;<br>            <span class="hljs-type">long</span> <span class="hljs-type">long</span> x = num;<br>            cout&lt;&lt;x&lt;&lt;<span class="hljs-string">&#x27; &#x27;</span>;<br>            <span class="hljs-comment">//这里不能省略hp.contains(x)，因为x*=x会改变hp[x]</span><br>            <span class="hljs-keyword">for</span> (; hp.<span class="hljs-built_in">contains</span>(x) &amp;&amp; hp[x] &gt; <span class="hljs-number">1</span>; x *= x) &#123;<br>                res += <span class="hljs-number">2</span>; <br>            &#125;<br>            res += hp.<span class="hljs-built_in">contains</span>(x) ? <span class="hljs-number">1</span> : <span class="hljs-number">-1</span>;<br>            ans = <span class="hljs-built_in">max</span>(ans, res);<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -292,8 +299,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>C++</div>
-      <div>http://example.com/2024/01/31/C++/</div>
+      <div>Leetcode3020</div>
+      <div>http://example.com/2024/01/31/Leetcode3020/</div>
     </div>
     <div class="license-meta">
       
@@ -337,9 +344,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/31/Leetcode3020/" title="Leetcode3020">
+                      <a href="/2024/02/03/binarySearch/" title="binarySearch">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Leetcode3020</span>
+                        <span class="hidden-mobile">binarySearch</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -347,8 +354,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/30/Java-Annotation/" title="Java-Annotation">
-                        <span class="hidden-mobile">Java-Annotation</span>
+                      <a href="/2024/01/31/C++/" title="C++">
+                        <span class="hidden-mobile">C++</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
