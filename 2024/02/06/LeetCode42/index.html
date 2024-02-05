@@ -16,21 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Leetcode 2736 - 最大和查询题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-sum-queries&#x2F;description&#x2F; 题目大意：给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。 对于第 i 个">
+    <meta name="description" content="Leetcode 42 - 接雨水题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;trapping-rain-water&#x2F; 题目大意：给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。 示例： 123输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]输出：6解释：上面是由数组 [0,1,0,2,1,0,1,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode2736">
-<meta property="og:url" content="http://example.com/2024/01/22/Leetcode2736/index.html">
+<meta property="og:title" content="LeetCode42">
+<meta property="og:url" content="http://example.com/2024/02/06/LeetCode42/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="Leetcode 2736 - 最大和查询题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-sum-queries&#x2F;description&#x2F; 题目大意：给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。 对于第 i 个">
+<meta property="og:description" content="Leetcode 42 - 接雨水题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;trapping-rain-water&#x2F; 题目大意：给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。 示例： 123输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]输出：6解释：上面是由数组 [0,1,0,2,1,0,1,">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-22T13:50:33.000Z">
-<meta property="article:modified_time" content="2024-01-22T14:02:10.871Z">
+<meta property="og:image" content="http://example.com/image42.png">
+<meta property="article:published_time" content="2024-02-05T16:12:58.000Z">
+<meta property="article:modified_time" content="2024-02-05T16:15:20.565Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/image42.png">
   
   
   
-  <title>Leetcode2736 - JJW&#39;s blog</title>
+  <title>LeetCode42 - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Leetcode2736"></span>
+            <span id="subtitle" data-typed-text="LeetCode42"></span>
           
         </div>
 
@@ -207,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-22 21:50" pubdate>
-          January 22, 2024 pm
+        <time datetime="2024-02-06 00:12" pubdate>
+          February 6, 2024 am
         </time>
       </span>
     
@@ -219,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          415 words
+          264 words
         
       </span>
     
@@ -230,7 +232,7 @@
         
         
         
-          4 mins
+          3 mins
         
       </span>
     
@@ -267,17 +269,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Leetcode2736</h1>
+            <h1 id="seo-header">LeetCode42</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Leetcode-2736-最大和查询"><a href="#Leetcode-2736-最大和查询" class="headerlink" title="Leetcode 2736 - 最大和查询"></a>Leetcode 2736 - 最大和查询</h1><h3 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximum-sum-queries/description/">https://leetcode.cn/problems/maximum-sum-queries/description/</a></p>
-<h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。</p>
-<p>对于第 i 个查询，在所有满足 nums1[j] &gt;&#x3D; xi 且 nums2[j] &gt;&#x3D; yi 的下标 j (0 &lt;&#x3D; j &lt; n) 中，找出 nums1[j] + nums2[j] 的 最大值 ，如果不存在满足条件的 j 则返回 -1 。</p>
-<p>返回数组 answer ，其中 answer[i] 是第 i 个查询的答案。</p>
-<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">单调栈+二分查找<br></code></pre></td></tr></table></figure>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">maximumSumQueries</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums1, vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums2, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; sortedNums;<br>        vector&lt;tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; sortedQueries;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; nums1.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            sortedNums.<span class="hljs-built_in">emplace_back</span>(nums1[i], nums2[i]);<br>        &#125;<br>        <span class="hljs-built_in">sort</span>(sortedNums.<span class="hljs-built_in">begin</span>(), sortedNums.<span class="hljs-built_in">end</span>(), greater&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt;());<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; queries.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            sortedQueries.<span class="hljs-built_in">emplace_back</span>(i, queries[i][<span class="hljs-number">0</span>], queries[i][<span class="hljs-number">1</span>]);<br>        &#125;<br>        <span class="hljs-built_in">sort</span>(sortedQueries.<span class="hljs-built_in">begin</span>(), sortedQueries.<span class="hljs-built_in">end</span>(), [](tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; &amp;a, tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; &amp;b) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-built_in">get</span>&lt;<span class="hljs-number">1</span>&gt;(a) &gt; <span class="hljs-built_in">get</span>&lt;<span class="hljs-number">1</span>&gt;(b);<br>        &#125;);<br><br>        vector&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; stk;<br>        <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">answer</span><span class="hljs-params">(queries.size(), <span class="hljs-number">-1</span>)</span></span>;<br>        <span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;[i, x, y] : sortedQueries) &#123;<br>            <span class="hljs-keyword">while</span> (j &lt; sortedNums.<span class="hljs-built_in">size</span>() &amp;&amp; sortedNums[j].first &gt;= x) &#123;<br>                <span class="hljs-keyword">auto</span> [num1, num2] = sortedNums[j];<br>                <span class="hljs-keyword">while</span> (!stk.<span class="hljs-built_in">empty</span>() &amp;&amp; stk.<span class="hljs-built_in">back</span>().second &lt;= num1 + num2) &#123;<br>                    stk.<span class="hljs-built_in">pop_back</span>();<br>                &#125;<br>                <span class="hljs-keyword">if</span> (stk.<span class="hljs-built_in">empty</span>() || stk.<span class="hljs-built_in">back</span>().first &lt; num2) &#123;<br>                    stk.<span class="hljs-built_in">emplace_back</span>(num2, num1 + num2);<br>                &#125;<br>                j++;<br>            &#125;<br>            <span class="hljs-type">int</span> k = <span class="hljs-built_in">lower_bound</span>(stk.<span class="hljs-built_in">begin</span>(), stk.<span class="hljs-built_in">end</span>(), <span class="hljs-built_in">make_pair</span>(y, <span class="hljs-number">0</span>)) - stk.<span class="hljs-built_in">begin</span>();<br>            <span class="hljs-keyword">if</span> (k &lt; stk.<span class="hljs-built_in">size</span>()) &#123;<br>                answer[i] = stk[k].second;<br>            &#125;<br>        &#125;    <br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; stk.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            cout &lt;&lt; stk[i].first &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; stk[i].second &lt;&lt; endl;<br>        &#125;        <br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+                <h1 id="Leetcode-42-接雨水"><a href="#Leetcode-42-接雨水" class="headerlink" title="Leetcode 42 - 接雨水"></a>Leetcode 42 - 接雨水</h1><h3 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/trapping-rain-water/">https://leetcode.cn/problems/trapping-rain-water/</a></p>
+<h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
+<h3 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h3><p><img src="/image42.png" srcset="/img/loading.gif" lazyload alt="Alt text"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs base">输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出：6<br>解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 <br></code></pre></td></tr></table></figure>
+
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><p>双指针<br>从左往右能到达的最大高度，和从右往左能到达的最大高度，取较小值</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">trap</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-comment">//双指针</span><br>        <span class="hljs-comment">//从左往右能到达的最大高度，和从右往左能到达的最大高度，取较小值</span><br>        <span class="hljs-type">int</span> n = height.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-type">int</span> res = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> left = <span class="hljs-number">0</span>, right = n - <span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span> leftMax = <span class="hljs-number">0</span>, rightMax = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span> (left &lt; right) &#123;<br>            leftMax = <span class="hljs-built_in">max</span>(leftMax, height[left]);<br>            rightMax = <span class="hljs-built_in">max</span>(rightMax, height[right]);<br>            <span class="hljs-keyword">if</span> (height[left] &lt; height[right]) &#123;<br>                res += leftMax - height[left];<br>                left++;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                res += rightMax -height[right];<br>                right--;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -295,8 +298,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Leetcode2736</div>
-      <div>http://example.com/2024/01/22/Leetcode2736/</div>
+      <div>LeetCode42</div>
+      <div>http://example.com/2024/02/06/LeetCode42/</div>
     </div>
     <div class="license-meta">
       
@@ -308,7 +311,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 22, 2024</div>
+          <div>February 6, 2024</div>
         </div>
       
       
@@ -340,9 +343,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/22/Leetcode3012/" title="Leetcode3012">
+                      <a href="/2024/02/06/LeetCode236/" title="LeetCode236">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Leetcode3012</span>
+                        <span class="hidden-mobile">LeetCode236</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -350,8 +353,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/22/LeetCode2352/" title="Leetcode2352">
-                        <span class="hidden-mobile">Leetcode2352</span>
+                      <a href="/2024/02/06/LeetCode437/" title="LeetCode437">
+                        <span class="hidden-mobile">LeetCode437</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

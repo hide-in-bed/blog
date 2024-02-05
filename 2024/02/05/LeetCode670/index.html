@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Leetcode 2736 - 最大和查询题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-sum-queries&#x2F;description&#x2F; 题目大意：给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。 对于第 i 个">
+    <meta name="description" content="Leetcode 670 - 最大交换题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-swap&#x2F;description&#x2F; 题目大意：给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。 示例1：123输入: 2736输出: 7236解释: 交换数字2和数字7。  分析：1贪心，将最大的数字移动到前面，如果前面本身是最大数字，则不动 代码：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode2736">
-<meta property="og:url" content="http://example.com/2024/01/22/Leetcode2736/index.html">
+<meta property="og:title" content="LeetCode670">
+<meta property="og:url" content="http://example.com/2024/02/05/LeetCode670/index.html">
 <meta property="og:site_name" content="JJW&#39;s blog">
-<meta property="og:description" content="Leetcode 2736 - 最大和查询题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-sum-queries&#x2F;description&#x2F; 题目大意：给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。 对于第 i 个">
+<meta property="og:description" content="Leetcode 670 - 最大交换题目链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;maximum-swap&#x2F;description&#x2F; 题目大意：给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。 示例1：123输入: 2736输出: 7236解释: 交换数字2和数字7。  分析：1贪心，将最大的数字移动到前面，如果前面本身是最大数字，则不动 代码：">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-22T13:50:33.000Z">
-<meta property="article:modified_time" content="2024-01-22T14:02:10.871Z">
+<meta property="article:published_time" content="2024-02-05T15:47:43.000Z">
+<meta property="article:modified_time" content="2024-02-05T15:51:00.819Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Leetcode2736 - JJW&#39;s blog</title>
+  <title>LeetCode670 - JJW&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Leetcode2736"></span>
+            <span id="subtitle" data-typed-text="LeetCode670"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-22 21:50" pubdate>
-          January 22, 2024 pm
+        <time datetime="2024-02-05 23:47" pubdate>
+          February 5, 2024 pm
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          415 words
+          242 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          4 mins
+          3 mins
         
       </span>
     
@@ -267,17 +267,17 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Leetcode2736</h1>
+            <h1 id="seo-header">LeetCode670</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Leetcode-2736-最大和查询"><a href="#Leetcode-2736-最大和查询" class="headerlink" title="Leetcode 2736 - 最大和查询"></a>Leetcode 2736 - 最大和查询</h1><h3 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximum-sum-queries/description/">https://leetcode.cn/problems/maximum-sum-queries/description/</a></p>
-<h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] &#x3D; [xi, yi] 。</p>
-<p>对于第 i 个查询，在所有满足 nums1[j] &gt;&#x3D; xi 且 nums2[j] &gt;&#x3D; yi 的下标 j (0 &lt;&#x3D; j &lt; n) 中，找出 nums1[j] + nums2[j] 的 最大值 ，如果不存在满足条件的 j 则返回 -1 。</p>
-<p>返回数组 answer ，其中 answer[i] 是第 i 个查询的答案。</p>
-<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">单调栈+二分查找<br></code></pre></td></tr></table></figure>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">maximumSumQueries</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums1, vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums2, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; sortedNums;<br>        vector&lt;tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; sortedQueries;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; nums1.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            sortedNums.<span class="hljs-built_in">emplace_back</span>(nums1[i], nums2[i]);<br>        &#125;<br>        <span class="hljs-built_in">sort</span>(sortedNums.<span class="hljs-built_in">begin</span>(), sortedNums.<span class="hljs-built_in">end</span>(), greater&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt;());<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; queries.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            sortedQueries.<span class="hljs-built_in">emplace_back</span>(i, queries[i][<span class="hljs-number">0</span>], queries[i][<span class="hljs-number">1</span>]);<br>        &#125;<br>        <span class="hljs-built_in">sort</span>(sortedQueries.<span class="hljs-built_in">begin</span>(), sortedQueries.<span class="hljs-built_in">end</span>(), [](tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; &amp;a, tuple&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt; &amp;b) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-built_in">get</span>&lt;<span class="hljs-number">1</span>&gt;(a) &gt; <span class="hljs-built_in">get</span>&lt;<span class="hljs-number">1</span>&gt;(b);<br>        &#125;);<br><br>        vector&lt;pair&lt;<span class="hljs-type">int</span>, <span class="hljs-type">int</span>&gt;&gt; stk;<br>        <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">answer</span><span class="hljs-params">(queries.size(), <span class="hljs-number">-1</span>)</span></span>;<br>        <span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;[i, x, y] : sortedQueries) &#123;<br>            <span class="hljs-keyword">while</span> (j &lt; sortedNums.<span class="hljs-built_in">size</span>() &amp;&amp; sortedNums[j].first &gt;= x) &#123;<br>                <span class="hljs-keyword">auto</span> [num1, num2] = sortedNums[j];<br>                <span class="hljs-keyword">while</span> (!stk.<span class="hljs-built_in">empty</span>() &amp;&amp; stk.<span class="hljs-built_in">back</span>().second &lt;= num1 + num2) &#123;<br>                    stk.<span class="hljs-built_in">pop_back</span>();<br>                &#125;<br>                <span class="hljs-keyword">if</span> (stk.<span class="hljs-built_in">empty</span>() || stk.<span class="hljs-built_in">back</span>().first &lt; num2) &#123;<br>                    stk.<span class="hljs-built_in">emplace_back</span>(num2, num1 + num2);<br>                &#125;<br>                j++;<br>            &#125;<br>            <span class="hljs-type">int</span> k = <span class="hljs-built_in">lower_bound</span>(stk.<span class="hljs-built_in">begin</span>(), stk.<span class="hljs-built_in">end</span>(), <span class="hljs-built_in">make_pair</span>(y, <span class="hljs-number">0</span>)) - stk.<span class="hljs-built_in">begin</span>();<br>            <span class="hljs-keyword">if</span> (k &lt; stk.<span class="hljs-built_in">size</span>()) &#123;<br>                answer[i] = stk[k].second;<br>            &#125;<br>        &#125;    <br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; stk.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            cout &lt;&lt; stk[i].first &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; stk[i].second &lt;&lt; endl;<br>        &#125;        <br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+                <h1 id="Leetcode-670-最大交换"><a href="#Leetcode-670-最大交换" class="headerlink" title="Leetcode 670 - 最大交换"></a>Leetcode 670 - 最大交换</h1><h3 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximum-swap/description/">https://leetcode.cn/problems/maximum-swap/description/</a></p>
+<h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。</p>
+<h3 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs C++">输入: <span class="hljs-number">2736</span><br>输出: <span class="hljs-number">7236</span><br>解释: 交换数字<span class="hljs-number">2</span>和数字<span class="hljs-number">7</span>。<br></code></pre></td></tr></table></figure>
+
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">贪心，将最大的数字移动到前面，如果前面本身是最大数字，则不动<br></code></pre></td></tr></table></figure>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maximumSwap</span><span class="hljs-params">(<span class="hljs-type">int</span> num)</span> </span>&#123;<br>        <span class="hljs-comment">//贪心，将最大的数字移动到前面，如果前面本身是最大数字，则不动</span><br>        string numString = <span class="hljs-built_in">to_string</span>(num);<br>        <span class="hljs-type">int</span> n = numString.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>            <span class="hljs-type">int</span> maxValueIndex = <span class="hljs-built_in">maxIndex</span>(numString, i);<br>            <span class="hljs-keyword">if</span> (numString[maxValueIndex] != numString[i]) &#123;<br>                <span class="hljs-built_in">swap</span>(numString[i], numString[maxValueIndex]);<br>                <span class="hljs-keyword">break</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>            ans *= <span class="hljs-number">10</span>;<br>            ans += numString[i] - <span class="hljs-string">&#x27;0&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxIndex</span><span class="hljs-params">(string str, <span class="hljs-type">int</span> start)</span> </span>&#123;<br>        <span class="hljs-comment">//从后往前寻找最大值</span><br>        <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> max = <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= start; i--) &#123;<br>            <span class="hljs-keyword">if</span> (str[i] - <span class="hljs-string">&#x27;0&#x27;</span> &gt; max) &#123;<br>                max = str[i] - <span class="hljs-string">&#x27;0&#x27;</span>;<br>                ans = i;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -295,8 +295,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Leetcode2736</div>
-      <div>http://example.com/2024/01/22/Leetcode2736/</div>
+      <div>LeetCode670</div>
+      <div>http://example.com/2024/02/05/LeetCode670/</div>
     </div>
     <div class="license-meta">
       
@@ -308,7 +308,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 22, 2024</div>
+          <div>February 5, 2024</div>
         </div>
       
       
@@ -340,9 +340,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/22/Leetcode3012/" title="Leetcode3012">
+                      <a href="/2024/02/06/LeetCode2130/" title="LeetCode2130">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Leetcode3012</span>
+                        <span class="hidden-mobile">LeetCode2130</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -350,8 +350,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/22/LeetCode2352/" title="Leetcode2352">
-                        <span class="hidden-mobile">Leetcode2352</span>
+                      <a href="/2024/02/03/LeetCode%E6%80%BB%E7%BB%93/" title="LeetCode总结">
+                        <span class="hidden-mobile">LeetCode总结</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
